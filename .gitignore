@@ -1,0 +1,6 @@
+# Ignore Stripe secrets
+Refund-Payment-API/app.js
+Stripe-Payments-API/config/.dev.env
+Stripe-Payments-API/config/.prod.env
+Stripe-Payments-API/serverless.yml
+Stripe-Payments-Webhook-API/app.js
