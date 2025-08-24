@@ -1,0 +1,50 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: login-api
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+# you can overwrite defaults here
+  stage: prod
+  region: us-east-2
+  memorySize: 2048
+  timeout: 15
+
+functions:
+  login:
+    handler: handler.login
+    events:
+      - httpApi:
+          path: /api/v1/login
+          method: post
+#    Define function environment variables here
+    environment:
+      CONFIG: prod
+      VERSION: 1
+      APP_NAME: login-api
+      APP_PORT: 3001
+      LOG_LEVEL: debug
+      JWT_SECRET_KEY: a68aa22cf4ad13c1ac7bd9e6c42f3cf4b492304276cd4745d2a3cb45e1a43451
+      JWT_EXPIRY_TIME_IN_SEC: 3600
+      DB_CONNECTION_STRING: mongodb+srv://ems-db.ehsz9n7.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority
+      SSL_CERT_PATH: mongodb-atlas-ssl-cert.pem

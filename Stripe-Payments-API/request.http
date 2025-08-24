@@ -1,0 +1,24 @@
+### Payments-API Local API
+
+POST http://localhost:6005/api/v1/payments
+Content-Type: application/json
+
+{
+  "requestId": "1234543234",
+  "eventId": "6562f2fa0562e5cd0d50e294",
+  "type": "event"
+}
+
+
+### Payments-API Deployed API
+
+POST https://uj1wgatgb1.execute-api.us-east-2.amazonaws.com/api/v1/payments
+Content-Type: application/json
+
+{
+  "requestId": "1234543234",
+  "eventId": "6562f2ce1170773b924e6c70",
+  "userId": "651aee2192ff0887dd7a362c",
+  "bookingId": "",
+  "type": "event"
+}

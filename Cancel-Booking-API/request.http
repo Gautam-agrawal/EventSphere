@@ -1,0 +1,42 @@
+### Cancel-Booking-API Local API
+
+POST http://localhost:6006/api/v1/cancelBooking
+Content-Type: application/json
+
+# {
+#   "requestId": "1234543234",
+#   "email": "rutdave@iu.edu",
+#   "userId": "651b771750511926ae07aec5",
+#   "type": "event",
+#   "bookingId": "6566b98a719658a9f58273ca"
+# }
+
+{
+  "requestId": "1234543234",
+  "email": "rutvijUdemy@gmail.com",
+  "userId": "653dab111f1d779c39212f69",
+  "type": "event",
+  "bookingId": "656a5d911e312803c9328d11"
+}
+
+
+### Cancel-Booking-API Deployed API
+
+POST https://nxbrgquyb9.execute-api.us-east-2.amazonaws.com/api/v1/cancelBooking
+Content-Type: application/json
+
+# {
+#   "requestId": "1234543234",
+#   "email": "rutdave@iu.edu",
+#   "userId": "651b771750511926ae07aec5",
+#   "type": "event",
+#   "bookingId": "6566c2a6c3c3be160b7cd786"
+# }
+
+{
+  "requestId": "1234543234",
+  "email": "rutvijUdemy@gmail.com",
+  "userId": "653dab111f1d779c39212f69",
+  "type": "event",
+  "bookingId": "656a5d911e312803c9328d11"
+}

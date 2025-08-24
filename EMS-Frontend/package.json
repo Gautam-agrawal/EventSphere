@@ -1,0 +1,66 @@
+{
+  "name": "react-tailwind-app",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@eidellev/react-tag-input": "^1.1.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/system": "^5.14.19",
+    "@react-google-maps/api": "^2.19.2",
+    "@syncfusion/ej2-react-maps": "^23.2.4",
+    "axios": "^1.6.0",
+    "cra-template": "1.1.3",
+    "crypto-js": "^4.2.0",
+    "google-map-react": "^2.2.1",
+    "google-maps-react-markers": "^2.0.7",
+    "mapbox-gl": "^2.7.0",
+    "react": "^18.0.0",
+    "react-chat-engine": "^1.11.28",
+    "react-chat-engine-pretty": "^0.1.8",
+    "react-datepicker": "^4.24.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.12.0",
+    "react-jwt": "^1.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-map-gl": "^7.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "react-simple-maps": "^3.0.0",
+    "react-tag-input-component": "^2.0.2",
+    "react-tailwindcss-datepicker": "^1.6.6",
+    "react-time-picker": "^6.5.2",
+    "socket.io-client": "^4.7.2",
+    "worker-loader": "^3.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "gh-pages": "^6.0.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  }
+}

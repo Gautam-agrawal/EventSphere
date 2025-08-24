@@ -1,0 +1,58 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: email-alerts-api
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+# you can overwrite defaults here
+  stage: prod
+  region: us-east-2
+
+functions:
+  emailAlerts:
+    handler: handler.emailAlerts
+#    The following are a few example events you can configure
+#    NOTE: Please make sure to change your handler code to work with those events
+#    Check the event documentation for details
+    events:
+      - httpApi:
+          path: /api/v1/alerts/email
+          method: post
+
+#    Define function environment variables here
+    environment:
+      CONFIG: prod
+      VERSION: 1
+      APP_NAME: email-alerts-api
+      APP_PORT: 3002
+      LOG_LEVEL: debug
+      ENCRYPTION_ALGORITHM: aes-256-cbc
+      ENCRYPTION_KEY: fEA9KfU5GBlST/FpBDAtWkAB9OGigsI+ufDZc1oM5ULQqm533oZoJE6DHIYvCcZY0tYgcpIpSC5aF9Dz3F/PhG0KbcJToiQLBQeHwwjQRTHpmkrMi6T41KCWis3XlsaEzNc5LmQpUw5JeMPixsUzBcbihufvVuV8AGmDIJht+zw=
+      ENCRYPTION_IV: ArwZpygZyE7oy0DvuPK9Eep2uQFyysaVAmUaDXzD9jct0oG1YuC/K1w+NGQZ3DmVrpW/ENGyVP+jzgIqOiCWTcMVRf1hAX3j2CnovEOj9AWbiT5Ia+nXZ3Dw9AAZMB6lZL9Raj1klQZ2vDNMi3tryoWQgT4UJNYKcy7VDprGoFw=
+      EMAIL_SERVICE_TYPE: 
+      EMAIL_HOST: smtp-relay.sendinblue.com
+      EMAIL_PORT: 587
+      EMAIL_USER: rutvijdave12@gmail.com
+      EMAIL_PASS: DsCKblF+Rvu3s4+XrVgLJd7ehY7FlFkvTh8cShbTnSLM6AuUerZqZLtnL1WxhHy/FH3ytFcGY+3w+4fV+IVQ38OYupGyuggD7TwSUucs+6g2MNQTRnPLC0yBKpWry1EHkX0Gk++rlxmuFlBD5uxVXphn8lvdyLyR0Cie3ioVzrI=
+      EMAIL_SECURE: false
+      PRIVATE_KEY_FILE_PATH: private_key.pem

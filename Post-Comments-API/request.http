@@ -1,0 +1,25 @@
+//Place base64 image here
+
+
+POST http://localhost:6010/api/v1/comment
+Content-Type: application/json
+
+{
+  "requestId": "23456543",
+  "eventId": "656bd5b80d7024ad9734f8f5",
+  "userId": "656ad86fdc37fa676bebbf5e",
+  "comment": "Hi this is Rutvij Dave",
+  "replyToId": ""
+}
+
+### Event Storage API Deployed
+POST https://zty8kz1jvl.execute-api.us-east-2.amazonaws.com/api/v1/comment
+Content-Type: application/json
+
+{
+  "requestId": "23456543",
+  "eventId": "656bd5b80d7024ad9734f8f5",
+  "userId": "656ad86fdc37fa676bebbf5e",
+  "comment": "Chup be",
+  "replyToId": "656bebfb602fdee41270a54f"
+}

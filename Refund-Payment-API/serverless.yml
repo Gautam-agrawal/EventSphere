@@ -1,0 +1,16 @@
+service: refund-payment-cron
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: prod
+  region: us-east-2
+
+functions:
+  rateHandler:
+    handler: app.refundPaymentBatch
+    timeout: 30
+    events:
+      # Invoke Lambda function every minute
+      - schedule: rate(24 hours)

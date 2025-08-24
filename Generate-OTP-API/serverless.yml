@@ -1,0 +1,65 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: generate-otp-api
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+# you can overwrite defaults here
+  stage: prod
+  region: us-east-2
+
+functions:
+  generateOtp:
+    handler: handler.generateOtp
+#    The following are a few example events you can configure
+#    NOTE: Please make sure to change your handler code to work with those events
+#    Check the event documentation for details
+    events:
+      - httpApi:
+          path: /api/v1/generateOtp
+          method: post
+
+#    Define function environment variables here
+    environment:
+      CONFIG: prod
+      VERSION: 1
+      APP_NAME: generate-otp-api
+      APP_PORT: 3003
+      LOG_LEVEL: debug
+      ENCRYPTION_ALGORITHM: aes-256-cbc
+      ENCRYPTION_KEY: fEA9KfU5GBlST/FpBDAtWkAB9OGigsI+ufDZc1oM5ULQqm533oZoJE6DHIYvCcZY0tYgcpIpSC5aF9Dz3F/PhG0KbcJToiQLBQeHwwjQRTHpmkrMi6T41KCWis3XlsaEzNc5LmQpUw5JeMPixsUzBcbihufvVuV8AGmDIJht+zw=
+      ENCRYPTION_IV: ArwZpygZyE7oy0DvuPK9Eep2uQFyysaVAmUaDXzD9jct0oG1YuC/K1w+NGQZ3DmVrpW/ENGyVP+jzgIqOiCWTcMVRf1hAX3j2CnovEOj9AWbiT5Ia+nXZ3Dw9AAZMB6lZL9Raj1klQZ2vDNMi3tryoWQgT4UJNYKcy7VDprGoFw=
+      PRIVATE_KEY_FILE_PATH: private_key.pem
+      REDIS_HOST: redis-14895.c309.us-east-2-1.ec2.cloud.redislabs.com
+      REDIS_PORT: 14895
+      REDIS_PASSWORD: e6xQDp1CFhW6kj/xk1ZXs5L0tpPtbAmCAzDUDWGo80eAIurVcjfSRIyX3D8GNinBHVQs0/GTvdTcX/sBllhbKMDR7Ufi8Qy5GB63oy395xzcbay3karitP6ctIh8iwY52DYVvA3llEfA6/PXBTpW8v5afC5/swrlWHDvKBfgap0=
+      TEMPLATES_PATH: OTP_CONFIG/templates.json
+      WHITELIST_PATH: OTP_CONFIG/whitelist.json
+      MAX_OTP_COUNT_LIMIT: 5
+      MAX_OTP_COUNT_LIMIT_TIME_IN_SEC: 300
+      IS_STATIC_OTP: true
+      STATIC_OTP: 123123
+      EMAIL_ALERTS_URL: https://pronhu1bka.execute-api.us-east-2.amazonaws.com/api/v1/alerts/email
+      EMAIL_ALERTS_TIMEOUT: 50000
+      REDIS_OTP_STORAGE_TTL: 1800
+      

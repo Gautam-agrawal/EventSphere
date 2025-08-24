@@ -1,0 +1,10 @@
+{
+	"LOGIN_MFA": {
+		"OTP_LENGTH": 6,
+		"EMAIL_SUBJECT": "EMS OTP for login",
+		"EMAIL_BODY": "Dear Customer,<BR/><BR/>{TOKEN2} is the OTP (One Time Password) for your login. This OTP is valid only for {TOKEN3} minutes.<BR/><BR/>Please do not share this OTP with anyone.<BR/><BR/>Regards,<BR/>EMS<BR/><BR/>(This is an auto generated email, please do not reply)",
+		"EXPIRY_TIME_IN_SEC": 1800,
+		"IS_MIN": true,
+		"INVALID_ATTEMPTS": 3
+	}
+}

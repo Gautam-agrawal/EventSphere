@@ -1,0 +1,53 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: validate-otp-api
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+# you can overwrite defaults here
+  stage: prod
+  region: us-east-2
+
+
+functions:
+  validateOtp:
+    handler: handler.validateOtp
+#    The following are a few example events you can configure
+#    NOTE: Please make sure to change your handler code to work with those events
+#    Check the event documentation for details
+    events:
+      - httpApi:
+          path: /api/v1/validateOtp
+          method: post
+
+#    Define function environment variables here
+    environment:
+      CONFIG: prod
+      VERSION: 1
+      APP_NAME: validate-otp-api
+      APP_PORT: 3004
+      LOG_LEVEL: debug
+      REDIS_HOST: redis-14895.c309.us-east-2-1.ec2.cloud.redislabs.com
+      REDIS_PORT: 14895
+      REDIS_PASSWORD: e6xQDp1CFhW6kj/xk1ZXs5L0tpPtbAmCAzDUDWGo80eAIurVcjfSRIyX3D8GNinBHVQs0/GTvdTcX/sBllhbKMDR7Ufi8Qy5GB63oy395xzcbay3karitP6ctIh8iwY52DYVvA3llEfA6/PXBTpW8v5afC5/swrlWHDvKBfgap0=
+      TEMPLATES_PATH: OTP_CONFIG/templates.json

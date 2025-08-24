@@ -1,0 +1,9 @@
+GET http://localhost:6003/api/v1/events
+
+### Get all events Deployed
+
+GET https://imlfn1gk32.execute-api.us-east-2.amazonaws.com/api/v1/events
+
+###
+
+GET http://ec2-3-134-104-92.us-east-2.compute.amazonaws.com:6003/api/v1/events

@@ -1,0 +1,23 @@
+### Email-Alerts API Deployed
+
+POST https://pronhu1bka.execute-api.us-east-2.amazonaws.com/api/v1/alerts/email
+Content-Type: application/json
+
+{
+    "requestId": "123456sdf78986543",
+    "email": "rutvijUdemy@gmail.com",
+    "subject": "cuJgckWf2oZlqBNHJJrZH05FXSUzH/5smlJldfFJlo5X4k1aYlAS+G8rgVMjVIgi",
+    "body": "50E94keU09gZNdYcDn7NgtLeNwl5ItXMjnOLhLOANgy3IdWDHdpu++WUQxh0wRuHKFUnIY5XuNGqm0oCn1KaOr3kfqxIvCCxRmlKRn7Lfil970l6cMzTbLfRYTyX37GXk8g0QjZxQXEZ+rAQVBW0nwXQR3P1QHX7mMTcN3fW9U01w529grtgo642zaApAkfZ7a4w+mn+S/JxASM47Vvl/lGGkzuL+d/kImGjSzzm8RI/vEWmwTz9klN7/uD1X3MBf025V4x/S5+W0VJElSomngq+VvqhiH2g+iaRfqECjaVHwRcqHvA5Kq0KRLlXY6WSoXRMBvJQo8cbECDXll6B7VcYPk8N9ht7Xrw7r7BEib3sR4zQwbq5zPIg53CcFeC4EvWzdqNBFdRJ00Jl5VX4kmIH44lB85BwCWP02jas9pB5/xT2uhm5FSh80n/Q/t0ispVTptc/39L9BQMoHo63k4Lq+uParD2ZdPFjB1VIn2VI47/ePWfCZVT/gXJ9tZ4ObhE4UyvYzvGsMGqMByPPwisYr37ZC/gTZI7Wrp/Y5eq2xHOWc7KH585V4NMTsq17lKOnh4sPhjN0js85M5Fo+ICLYOaHT6HcInc83yyShqPNSgDM4w9x8wHW15TKZwv+MPx5DcbUSZ5yMjtp5gPQZBfQ32zzm3Z2dsMXHrFKfmTnI621R6UHwtVhCbJtbSfj3ZS0VIQP8Xq28t0vX6Q0P+pjCV/DrxxxiW2rKVKUqxeInBQ/e5nS01wB4sOGCZuA"
+}
+
+### Email-Alerts API Local
+
+POST http://localhost:3002/api/v1/alerts/email HTTP/1.1
+Content-Type: application/json
+
+{
+    "requestId": "123456sdf78986543",
+    "email": "rutvijdave12@gmail.com",
+    "subject": "cuJgckWf2oZlqBNHJJrZH05FXSUzH/5smlJldfFJlo5X4k1aYlAS+G8rgVMjVIgi",
+    "body": "50E94keU09gZNdYcDn7NgtLeNwl5ItXMjnOLhLOANgy3IdWDHdpu++WUQxh0wRuHKFUnIY5XuNGqm0oCn1KaOr3kfqxIvCCxRmlKRn7Lfil970l6cMzTbLfRYTyX37GXk8g0QjZxQXEZ+rAQVBW0nwXQR3P1QHX7mMTcN3fW9U01w529grtgo642zaApAkfZ7a4w+mn+S/JxASM47Vvl/lGGkzuL+d/kImGjSzzm8RI/vEWmwTz9klN7/uD1X3MBf025V4x/S5+W0VJElSomngq+VvqhiH2g+iaRfqECjaVHwRcqHvA5Kq0KRLlXY6WSoXRMBvJQo8cbECDXll6B7VcYPk8N9ht7Xrw7r7BEib3sR4zQwbq5zPIg53CcFeC4EvWzdqNBFdRJ00Jl5VX4kmIH44lB85BwCWP02jas9pB5/xT2uhm5FSh80n/Q/t0ispVTptc/39L9BQMoHo63k4Lq+uParD2ZdPFjB1VIn2VI47/ePWfCZVT/gXJ9tZ4ObhE4UyvYzvGsMGqMByPPwisYr37ZC/gTZI7Wrp/Y5eq2xHOWc7KH585V4NMTsq17lKOnh4sPhjN0js85M5Fo+ICLYOaHT6HcInc83yyShqPNSgDM4w9x8wHW15TKZwv+MPx5DcbUSZ5yMjtp5gPQZBfQ32zzm3Z2dsMXHrFKfmTnI621R6UHwtVhCbJtbSfj3ZS0VIQP8Xq28t0vX6Q0P+pjCV/DrxxxiW2rKVKUqxeInBQ/e5nS01wB4sOGCZuA"
+}

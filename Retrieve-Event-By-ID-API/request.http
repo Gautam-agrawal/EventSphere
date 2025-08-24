@@ -1,0 +1,9 @@
+//Mention ID here
+@id = 656bd5b80d7024ad9734f8f5
+
+GET http://localhost:6006/api/v1/event/{{id}}
+
+
+### Get Event by ID Deployed
+
+GET http://ec2-3-134-104-92.us-east-2.compute.amazonaws.com:6006/api/v1/event/{{id}}

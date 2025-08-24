@@ -1,0 +1,50 @@
+### Booking-API Local API
+
+POST http://localhost:6004/api/v1/book
+Content-Type: application/json
+
+# {
+#   "requestId": "1234543234",
+#   "eventId": "656584420a461edb0dd6fb1c",
+#   "email": "rutdave@iu.edu",
+#   "userId": "651b771750511926ae07aec5",
+#   "type": "event"
+# }
+
+{
+  "requestId": "1234543234",
+  "eventId": "656584420a461edb0dd6fb1c",
+  "email": "rutvijUdemy@gmail.com",
+  "userId": "653dab111f1d779c39212f69",
+  "type": "event"
+}
+
+
+### Booking-API Deployed API
+
+POST https://otv5vi5ofa.execute-api.us-east-2.amazonaws.com/api/v1/book
+Content-Type: application/json
+
+{
+  "requestId": "1234543234",
+  "eventId": "656584420a461edb0dd6fb1c",
+  "email": "rutvijUdemy@gmail.com",
+  "userId": "653dab111f1d779c39212f69",
+  "type": "event"
+}
+
+# {
+#   "requestId": "1234543234",
+#   "eventId": "656584420a461edb0dd6fb1c",
+#   "email": "rutvijdave12@gmail.com",
+#   "userId": "653dfbbc08c8fc294c4948a0",
+#   "type": "event"
+# }
+
+# {
+#   "requestId": "1234543234",
+#   "eventId": "656584420a461edb0dd6fb1c",
+#   "email": "rutvijUdemy@gmail.com",
+#   "userId": "653dab111f1d779c39212f69",
+#   "type": "event"
+# }

@@ -1,0 +1,22 @@
+### Utility Events API Local API
+
+POST http://localhost:6009/api/v1/utilityEvents HTTP/1.1
+Content-Type: application/json
+
+{
+    "requestId": "12345432",
+    "userId": "6567c67cdf8020f7f898dc00",
+    "type": "orders"
+}
+
+
+### Utility Events API Deployed API
+
+POST https://j67hihpgsl.execute-api.us-east-2.amazonaws.com/api/v1/utilityEvents
+Content-Type: application/json
+
+{
+    "requestId": "12345432",
+    "userId": "653dab111f1d779c39212f69",
+    "type": "orders"
+}

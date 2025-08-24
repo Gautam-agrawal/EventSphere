@@ -1,0 +1,11 @@
+### Login API Local
+
+@userId=653dab111f1d779c39212f69
+
+GET http://localhost:3007/api/v1/userProfile/{{{{userId}}}}
+
+
+
+### Login API Deployed
+
+GET https://5tkz3sakp3.execute-api.us-east-2.amazonaws.com/api/v1/userProfile/{{userId}}

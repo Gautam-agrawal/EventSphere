@@ -1,0 +1,17 @@
+.rti--container {
+    transition: border-color 0.3s ease;
+  }
+  
+  .rti--container:focus {
+    border: 2px solid rgb(147 51 234);
+    border-color: rgb(147 51 234);
+  }
+  
+  .rti--container:focus-within {
+    border-color: rgb(147 51 234);
+  }
+  
+  .rti--container:focus-visible {
+    border-color: rgb(147 51 234);
+  }
+  
